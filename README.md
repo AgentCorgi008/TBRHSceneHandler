@@ -15,6 +15,23 @@ The tool automates dialogue tagging and scene preparation, reducing manual work 
 - Content preparation pipeline
 - Customize for your needs parsing of dialogues
 
+## How to custom
+
+Just create your own ```scene_nandler``` and extend or change all of any ```SceneHandler``` attributes:
+```python
+# modify here
+class SceneHandler:
+    SYMBOLS_TRIGGER = (",", "...", "!", ".", "?", "…", "*", "~")
+    IGNORE_PERS = ("gg", "gg_th")
+    SKIP_LINE_BASED_ON_SYMBOL = ("#", "*", "(", "-")
+
+...
+
+# create new a use that one
+# first - directory, second - added tag
+scene_handler = SceneHandler("source", "[hrtimg]")
+```
+
 ## 🛠 Technologies
 - Python
 - Ren'Py
