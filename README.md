@@ -32,9 +32,5 @@ class SceneHandler:
 scene_handler = SceneHandler("source", "[hrtimg]")
 ```
 
-## 🛠 Technologies
-- Python
-- Ren'Py
-
 ## ✨ Purpose
 Created to automate processing of large volumes of narrative content and accelerate text production workflows during game development.
